@@ -103,8 +103,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="GoIT\DZ\task1\Index.html" />
-    <Content Include="GoIT\DZ\task1\task1.html" />
+    <Content Include="GoIT\DZ\lesson10\lesson10.jpg" />
+    <Content Include="GoIT\DZ\lesson10\ReadMe.txt" />
+    <Content Include="GoIT\DZ\lesson11\lesson10_1.jpg" />
+    <Content Include="GoIT\DZ\lesson2\2.jpg" />
+    <Content Include="GoIT\DZ\lesson2\forms_hw.png" />
+    <Content Include="GoIT\DZ\lesson2\lists1_hw.png" />
+    <Content Include="GoIT\DZ\lesson2\lists2_hw.png" />
+    <Content Include="GoIT\DZ\lesson2\tables_hw.png" />
+    <Content Include="GoIT\DZ\lesson3\selector_task.png" />
+    <Content Include="GoIT\DZ\lesson3\task4.png" />
+    <Content Include="GoIT\DZ\lesson3\task5.png" />
+    <Content Include="GoIT\DZ\lesson3\task6.png" />
+    <Content Include="GoIT\DZ\lesson4\menu1.png" />
+    <Content Include="GoIT\DZ\lesson4\menu2.png" />
+    <Content Include="GoIT\DZ\lesson4\pager.png" />
+    <Content Include="GoIT\DZ\lesson5\-.jpg" />
+    <Content Include="GoIT\DZ\lesson5\task1.png" />
+    <Content Include="GoIT\DZ\lesson5\task2.png" />
+    <Content Include="GoIT\DZ\lesson6\task1.png" />
+    <Content Include="GoIT\DZ\lesson6\task2.png" />
+    <Content Include="GoIT\DZ\lesson7\task1.png" />
+    <Content Include="GoIT\DZ\lesson8\task1.png" />
+    <Content Include="GoIT\DZ\lesson8\task2.png" />
+    <Content Include="GoIT\DZ\lesson1\Index.html" />
+    <Content Include="GoIT\DZ\lesson1\task1.html" />
+    <Content Include="GoIT\DZ\lesson1\task3_1.png" />
+    <Content Include="GoIT\DZ\lesson1\task3_2.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +143,23 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="GoIT\DZ\lesson1\lesson1.docx" />
+    <Content Include="GoIT\DZ\lesson10\lesson10.psd" />
+    <Content Include="GoIT\DZ\lesson11\lesson10.psd" />
+    <Content Include="GoIT\DZ\lesson11\ReadMe.docx" />
+    <Content Include="GoIT\DZ\lesson2\Readme.docx" />
+    <Content Include="GoIT\DZ\lesson3\Readme.docx" />
+    <Content Include="GoIT\DZ\lesson4\ReadMe.docx" />
+    <Content Include="GoIT\DZ\lesson5\README.docx" />
+    <Content Include="GoIT\DZ\lesson5\task2.psd" />
+    <Content Include="GoIT\DZ\lesson6\README.docx" />
+    <Content Include="GoIT\DZ\lesson6\task1.psd" />
+    <Content Include="GoIT\DZ\lesson6\task2.psd" />
+    <Content Include="GoIT\DZ\lesson7\GO_iconic-graphics-free-psd-template.psd" />
+    <Content Include="GoIT\DZ\lesson7\ReadMe.docx" />
+    <Content Include="GoIT\DZ\lesson8\GO_iconic-graphics-free-psd-template.psd" />
+    <Content Include="GoIT\DZ\lesson8\README.docx" />
+    <Content Include="GoIT\DZ\lesson9\ReadMe.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
