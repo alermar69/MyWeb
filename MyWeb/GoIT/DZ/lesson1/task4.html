@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        function externalLinks() {
+            var links = document.getElementsByTagName("a");
+            for (i = 0; i < links.length; i++) {
+                var link = links[i];
+                if (link.getAttribute("href") && link.getAttribute("rel") === "external")
+                    link.target = "_blank";
+            }
+        }
+
+        window.onload = externalLinks;
+        /* ]]> */
+    </script>
+</head>
+<body>
+    <p><a href="task1.html">task11</a></p>
+    <p><a href="task2.html">task2</a></p>
+    <p><a href="task3.html">task3</a></p>
+    <p><a href="http://goit.com.ua">goit.com.ua</a></p>
+    <p><a href="http://ya.ru" rel="external">ya.ru</a></p>
+</body>
+</html>
