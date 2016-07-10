@@ -130,22 +130,88 @@
     </section>
 
 <!--section#help>.container>.row*1>.col-md-5.col-md-offset-2+.col-md-2.col-md-offset-1-->
-    <section id="help">
+<section id="help">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-2">
+                <h3>Не знаете какие жалюзи выбрать?</h3>
+                <br/>
+                <p>
+                    Оставьте заявку на консультацию и наш специалист подробно ответит<br/>
+                    на все Ваши вопросы. Это бесплатно.
+                </p>
+                <button data-toggle="modal" href="#">Бесплатная консультация</button>
+            </div>
+            <div class="col-md-2">
+                <img src="img/task3_1.png" alt="Картинка" class="img-responsive center"/>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--section#portfolio>.container>.row*1>.col-md-12*1>.section_header.text-center>h2-->
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_header text-center">
+                    <h2>Наши работы</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="slader">
+                    <div class="fotorama">
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                        <img src="image" alt="Картинка" class="img-responsive center"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="offer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="image" alt="Подарок" class="img-responsive center gift"/>
+            </div>
+            <div class="col-md-9">
+                <h4>Акция</h4>
+                <br/>
+                <h3>Закажите установку жалюзи до 29.06.2016</h3>
+                <p>И получите москитную сетку для окна.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" value="" class="form-control form_input" required="" placeholder="Имя..."/>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" value="" class="form-control form_input" placeholder="Телефон..."/>
+                    </div>
+                    <div class="col-md-4">
+                        <!--<input type="submit" value="Заказать" class="form-control form_input" placeholder="Телефон..."/>-->
+                        <button type="submit">Заказать жалюзи</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="feedback">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-md-offset-2">
-                    <h3>Не знаете какие жалюзи выбрать?</h3>
-                    <br />
-                    <p>
-                        Оставьте заявку на консультацию и наш специалист подробно ответит<br />
-                        на все Ваши вопросы. Это бесплатно.
-                    </p>
-                    <button data-toggle="modal" href="#">Бесплатная консультация</button>
-                </div>
-                <div class="col-md-2 col-md-offset-1">
-                    <img src="img/task3_1.png" alt="Картинка" class="img-responsive center" />
-                    
-                </div>
+                <div class="text-center section_header col-sm-12"></div>
+                <input type="color" value="" class="form-control form_input" placeholder="xxx" />
+                <input type="date" value="" class="form-control form_input" placeholder="xxx" />
             </div>
         </div>
     </section>
@@ -176,12 +242,15 @@
     <script>
         new WOW().init();
     </script>
-    <script>
-        $(document).ready(
-            function () {
-                $("html").niceScroll({ cursorcolor: "#000" });
-            }
-        );
-    </script>
+<script>
+    $(document).ready(
+        function() {
+            $("html").niceScroll({ cursorcolor: "#000" });
+        }
+    );
+</script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
 </body>
 </html>

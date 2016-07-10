@@ -135,6 +135,7 @@
     <Content Include="GoIT\DZ\lesson1\task1.html" />
     <Content Include="GoIT\DZ\lesson1\task3_1.png" />
     <Content Include="GoIT\DZ\lesson1\task3_2.png" />
+    <Content Include="Projects\Жалюзи\HtmlPage1.html" />
     <Content Include="Projects\Жалюзи\css\animate.css" />
     <Content Include="Projects\Жалюзи\css\bootstrap-theme.css" />
     <Content Include="Projects\Жалюзи\css\bootstrap-theme.min.css" />

@@ -1,0 +1,132 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трёхколоночный макет</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        [class*="col-"] {
+            background-color: #eee;
+            border-right: 2px solid #fff;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+<div class="dropdown">
+    <button class="btn btn-default" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-expanded="false">
+        Меню <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        <li role="presentation"><a role="menuitem" href="#">Сепулька</a></li>
+        <li role="presentation"><a role="menuitem" href="#">Сепулькарии</a></li>
+        <li role="presentation"><a role="menuitem" href="#">Сепуление</a></li>
+    </ul>
+</div>
+
+<div class="dropdown">
+    <button class="btn btn-default" id="dropdownMenu" type="button" data-toggle="dropdown" aria-expanded="false">
+        Меню <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        <li role="presentation"><a role="menuitem" href="#">Сепулька</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" href="#">Сепулькарии</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" href="#">Сепуление</a></li>
+    </ul>
+</div>
+
+<div class="btn-group btn-group btn-group-justified">
+    <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-align-left"></i></a>
+    <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-align-center"></i></a>
+    <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-align-right"></i></a>
+    <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-align-justify"></i></a>
+</div>
+<div class="btn-group">
+    <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-font"></i></a>
+    <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-bold"></i></a>
+    <a class="btn btn-primary" href="#"><i class="glyphicon glyphicon-italic"></i></a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3">3 колонки</div>
+        <div class="col-xs-7">7 колонок</div>
+        <div class="col-xs-2">2 колонки</div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-4">4 колонки</div>
+        <div class="col-xs-6">6 колонок</div>
+        <div class="col-xs-2">2 колонки</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3">3 колонки</div>
+        <div class="col-xs-5 col-xs-offset-1">5 колонок</div>
+        <div class="col-xs-2 col-xs-offset-1">2 колонки</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3">3 колонки</div>
+        <div class="col-xs-5 col-xs-push-1">5 колонок</div>
+        <div class="col-xs-2 col-xs-push-2">2 колонки</div>
+    </div>
+</div>
+<br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">Заголовок</div>
+        <div class="col-xs-5">
+            <div class="row">
+                <div class="col-xs-12">Колонка 1</div>
+                <div class="col-xs-6">Колонка 1-1</div>
+                <div class="col-xs-6">Колонка 1-2</div>
+            </div>
+        </div>
+        <div class="col-xs-5 col-xs-offset-2">Колонка 2</div>
+    </div>
+</div>
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">Заголовок</div>
+        <div class="col-xs-12 col-sm-8 col-md-8">Колонка 1</div>
+        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">Колонка 2</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 hidden-xs">Заголовок</div>
+        <div class="col-xs-12 col-sm-8 col-md-8">Колонка 1</div>
+        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">Колонка 2</div>
+        <div class="col-xs-12 visible-xs-block">Заголовок</div>
+    </div>
+</div>
+
+<script src="js/jquery.nicescroll.min.js"></script>
+<!--<script src="js/jquery.min.js"></script>-->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
