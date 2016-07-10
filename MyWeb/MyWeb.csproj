@@ -106,11 +106,16 @@
     <Content Include="GoIT\DZ\lesson10\lesson10.jpg" />
     <Content Include="GoIT\DZ\lesson10\ReadMe.txt" />
     <Content Include="GoIT\DZ\lesson11\lesson10_1.jpg" />
+    <Content Include="GoIT\DZ\lesson1\task2.html" />
+    <Content Include="GoIT\DZ\lesson1\task3.html" />
+    <Content Include="GoIT\DZ\lesson1\task4.html" />
     <Content Include="GoIT\DZ\lesson2\2.jpg" />
     <Content Include="GoIT\DZ\lesson2\forms_hw.png" />
     <Content Include="GoIT\DZ\lesson2\lists1_hw.png" />
     <Content Include="GoIT\DZ\lesson2\lists2_hw.png" />
     <Content Include="GoIT\DZ\lesson2\tables_hw.png" />
+    <Content Include="GoIT\DZ\lesson2\task1.html" />
+    <Content Include="GoIT\DZ\lesson2\task2.html" />
     <Content Include="GoIT\DZ\lesson3\selector_task.png" />
     <Content Include="GoIT\DZ\lesson3\task4.png" />
     <Content Include="GoIT\DZ\lesson3\task5.png" />
@@ -130,6 +135,22 @@
     <Content Include="GoIT\DZ\lesson1\task1.html" />
     <Content Include="GoIT\DZ\lesson1\task3_1.png" />
     <Content Include="GoIT\DZ\lesson1\task3_2.png" />
+    <Content Include="Projects\Жалюзи\css\animate.css" />
+    <Content Include="Projects\Жалюзи\css\bootstrap-theme.css" />
+    <Content Include="Projects\Жалюзи\css\bootstrap-theme.min.css" />
+    <Content Include="Projects\Жалюзи\css\bootstrap.css" />
+    <Content Include="Projects\Жалюзи\css\bootstrap.min.css" />
+    <Content Include="Projects\Жалюзи\css\font-awesome.min.css" />
+    <Content Include="Projects\Жалюзи\css\style.css" />
+    <Content Include="Projects\Жалюзи\fonts\fontawesome-webfont.svg" />
+    <Content Include="Projects\Жалюзи\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Projects\Жалюзи\img\task3_1.png" />
+    <Content Include="Projects\Жалюзи\index.html" />
+    <Content Include="Projects\Жалюзи\js\bootstrap.js" />
+    <Content Include="Projects\Жалюзи\js\bootstrap.min.js" />
+    <Content Include="Projects\Жалюзи\js\jquery.nicescroll.min.js" />
+    <Content Include="Projects\Жалюзи\js\npm.js" />
+    <Content Include="Projects\Жалюзи\js\wow.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +181,20 @@
     <Content Include="GoIT\DZ\lesson8\GO_iconic-graphics-free-psd-template.psd" />
     <Content Include="GoIT\DZ\lesson8\README.docx" />
     <Content Include="GoIT\DZ\lesson9\ReadMe.docx" />
+    <Content Include="Projects\Жалюзи\css\bootstrap-theme.css.map" />
+    <Content Include="Projects\Жалюзи\css\bootstrap-theme.min.css.map" />
+    <Content Include="Projects\Жалюзи\css\bootstrap.css.map" />
+    <Content Include="Projects\Жалюзи\css\bootstrap.min.css.map" />
+    <Content Include="Projects\Жалюзи\css\style.less" />
+    <Content Include="Projects\Жалюзи\fonts\fontawesome-webfont.eot" />
+    <Content Include="Projects\Жалюзи\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Projects\Жалюзи\fonts\fontawesome-webfont.woff" />
+    <Content Include="Projects\Жалюзи\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Projects\Жалюзи\fonts\FontAwesome.otf" />
+    <Content Include="Projects\Жалюзи\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Projects\Жалюзи\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Projects\Жалюзи\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Projects\Жалюзи\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
