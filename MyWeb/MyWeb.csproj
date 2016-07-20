@@ -112,6 +112,11 @@
     <Content Include="Content\css\style.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\img\advords-300x180.jpg" />
+    <Content Include="Content\img\direkt-teoriia-300x180.jpg" />
+    <Content Include="Content\img\google-analytics-300x180.jpg" />
+    <Content Include="Content\img\virtuemart-2-300x180.jpg" />
+    <Content Include="Content\img\webcamxp.png" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\jquery.nicescroll.min.js" />
@@ -151,6 +156,9 @@
     <Content Include="GoIT\DZ\lesson1\task1.html" />
     <Content Include="GoIT\DZ\lesson1\task3_1.png" />
     <Content Include="GoIT\DZ\lesson1\task3_2.png" />
+    <Content Include="Projects\1.html" />
+    <Content Include="Projects\sait.html" />
+    <Content Include="Projects\setka.html" />
     <Content Include="Projects\Жалюзи\HtmlPage1.html" />
     <Content Include="Projects\Жалюзи\css\animate.css" />
     <Content Include="Projects\Жалюзи\css\bootstrap-theme.css" />
