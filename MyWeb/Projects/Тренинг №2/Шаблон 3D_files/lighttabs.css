@@ -1,0 +1,69 @@
+.tabs{
+	position: fixed;
+	top: 100px;
+	right: 0;
+	height: 0;
+	z-index: 0;
+	float: right;
+	display:inline-block;
+}
+.tabs > div{
+	padding-top:10px;
+}
+.tabs ul{
+	margin:0px;
+	padding:0px;
+}
+.tabs ul:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:5px;
+	background: #9f9f9f;
+}
+.tabs ul li{
+	margin:0px;
+	padding:0px;
+	cursor:pointer;
+	display:block;
+	float:left;
+	padding:10px 15px;
+	background:#e9eaeb;
+	color:#707070;
+}
+.tabs ul li.active, .tabs ul li.active:hover{
+	background: #9f9f9f;
+	color:#fff;
+}
+.tabs ul li:hover{
+	background:#d6d6d7;
+}
+.tabs td{
+	width: 60px;
+}
+.tabs input{
+	width: 60px!important;
+}
+.button-block {
+	position: relative;
+	left:0;
+	top:0
+}
+.close-block {
+	display: block;
+	position: absolute;
+	top: -32px;
+	right: -8px;
+	width: 16px;
+	height: 16px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEXqAAD8oaH/AAD/ra3/vr7///91+I/7AAAAQklEQVR42oXPwQoAIAgD0JXu/385FfTQgnYweKAp9pUXmE+swAFWAG8owQBTqjQQ8SQOcAdRQVtkqHy7dDFd/X/tAVqqAopyUfkOAAAAAElFTkSuQmCC);
+	cursor: pointer;
+}
+
+#balustradeForm,#ledgeForm{
+	height:80vh; 
+	background: #fff; 
+	border: 1px solid #C1C1C1; 
+	overflow-x: scroll; 
+	overflow: auto;
+}

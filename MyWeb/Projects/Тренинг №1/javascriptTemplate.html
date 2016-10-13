@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Шаблон для javascript</title>
+</head>
+
+<body>
+
+<h1>Шаблон для тестирования javascript кода</h1>
+
+<p>Параметр 1: <input id="param1" type="number" value="1250"> </br>
+Параметр 2: <input id="param2" type="number" value="2000" > </br>
+<button onclick="raschet()">Рассчитать!</button>
+</p>
+
+<div id="outputDiv"></div>
+
+<script type="text/javascript">
+
+function raschet(){
+
+	var testNumber = document.getElementById("param1").value;
+	alert("Значение: " + testNumber); //вывод текста алертом
+	console.log("Значение: " + testNumber); //вывод текста в консоль
+	document.getElementById("outputDiv").innerHTML = "Значение: " + testNumber; //вывод текста в блок на странице
+
+}
+
+
+</script>
+
+</body></html>
