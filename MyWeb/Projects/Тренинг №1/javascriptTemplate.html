@@ -1,32 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<title>Шаблон для javascript</title>
+п»ї<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>РЁР°Р±Р»РѕРЅ РґР»СЏ javascript</title>
 </head>
 
 <body>
 
-<h1>Шаблон для тестирования javascript кода</h1>
+    <h1>РЁР°Р±Р»РѕРЅ РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ javascript РєРѕРґР°</h1>
 
-<p>Параметр 1: <input id="param1" type="number" value="1250"> </br>
-Параметр 2: <input id="param2" type="number" value="2000" > </br>
-<button onclick="raschet()">Рассчитать!</button>
-</p>
+    <p>
+        Р’С‹СЃРѕС‚Сѓ: <input id="height" type="number" value="1250"> <br />
+        РЁРёСЂРёРЅСѓ: <input id="width" type="number" value="2000"> <br />
+        <button onclick="raschet()">Р Р°СЃСЃС‡РёС‚Р°С‚СЊ!</button>
+    </p>
 
-<div id="outputDiv"></div>
+    <div id="outputDiv"></div>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-function raschet(){
+    function raschet() {
+        //for (var i = 0; i < 5; i++) {
+        //    console.log(i);
+        //}
+        //var x = 0;
+        //while (x<5) {
+        //    console.log(++x);
+        //}
+        
 
-	var testNumber = document.getElementById("param1").value;
-	alert("Значение: " + testNumber); //вывод текста алертом
-	console.log("Значение: " + testNumber); //вывод текста в консоль
-	document.getElementById("outputDiv").innerHTML = "Значение: " + testNumber; //вывод текста в блок на странице
+        var height = document.getElementById("height").value;
+        var width = document.getElementById("width").value;
 
-}
+        var testObj = {};
+        testObj.a = height;
+        testObj.b = width;
+        testObj.c = "ffff";
+        testObj.d = "100";
+        var summa = sum(testObj);
 
+        //if (width >=1500) {
+        //    alert("РЁРёСЂРёРЅР°: " + width);
+        //}else 
+        //    alert("РЁРёСЂРёРЅР° РјРµРЅСЊС€Рµ 1500");//РІС‹РІРѕРґ С‚РµРєСЃС‚Р° Р°Р»РµСЂС‚РѕРј
+        //console.log("Р’С‹СЃРѕС‚Р°: " + height); //РІС‹РІРѕРґ С‚РµРєСЃС‚Р° РІ РєРѕРЅСЃРѕР»СЊ
+        document.getElementById("outputDiv").innerHTML = "Р—РЅР°С‡РµРЅРёРµ: " + summa; //РІС‹РІРѕРґ С‚РµРєСЃС‚Р° РІ Р±Р»РѕРє РЅР° СЃС‚СЂР°РЅРёС†Рµ
 
-</script>
+    }
 
-</body></html>
+    function sum(obj) {
+        console.log(obj);
+        var result = 0;
+        for (var prop in obj) {
+            if (+obj[prop]) result += +obj[prop];
+        }
+        return result;
+        //return Number(obj.a) + Number(obj.b);
+    }
+
+    </script>
+
+</body>
+</html>

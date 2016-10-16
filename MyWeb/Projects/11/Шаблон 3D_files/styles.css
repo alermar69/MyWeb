@@ -1,0 +1,340 @@
+canvas {
+margin: 20px;
+border: 1px solid grey;
+}
+
+#WebGL-output{
+width: 840px;
+padding: 20px;
+margin: auto;
+}
+
+
+
+p.button {
+background-color: grey;
+padding: 3px;
+border-radius: 3px;
+cursor: pointer;
+width: 250px;
+color: white;
+text-align: center;
+}
+
+p.button:hover {
+background-color: #C7C7C7;
+}
+
+/*Мои стили*/
+textarea {
+//font-size: 18px;
+//font-family: monospace;
+}
+
+.tab_2, .tab_3, .tab_4, .tab_6, .tab_7, .tab_8, .form_table {
+width: 70%;
+border: 1px solid gray;
+border-collapse: collapse;
+}
+
+
+
+.tab_2 th, .tab_3 th, .tab_4 th, .tab_6 th, .tab_7 th, .tab_8 th {
+border: 1px solid gray;
+padding:5px;
+}
+
+.tab_2 td, .tab_3 td, .tab_4 td, .tab_6 td, .tab_7 td, .tab_8 td {
+border: 1px solid gray;
+padding:5px;
+text-align: center;
+}
+
+.form_table td, .form_table th {
+border: 1px solid gray;
+padding:5px;
+//text-align: center;
+}
+.form_table select, .tab_2 select {
+border: none;
+-webkit-appearance: none;
+font-size:0.9em;
+}
+
+.form_table input {
+border: none;
+font-size:0.9em;
+width: 100px;
+}
+
+.tab_2 input {
+border: none;
+font-size:0.9em;
+width: 100px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea.comments{
+border: none;
+font-size:1.2em;
+}
+
+
+.tab_3 td {
+width: 33%;
+}
+
+
+.tab_4 td {
+width: 25%;
+}
+
+.tab_6 td {
+width: 16%;
+}
+
+.tab_7 td {
+width: 14%;
+}
+
+.tab_8 td {
+width: 12.5%;
+}
+
+body {
+font-size:1.2em;
+}
+
+h1 {
+	margin:0; 
+	padding:0;
+	font-size:1.5em;
+	margin-bottom:15px;
+	padding-bottom:5px;
+	padding-top:14px;
+	text-align:center;	
+}
+
+h2 {
+font-size:1.3em;
+text-align: center;
+padding-top:15px;
+padding-bottom:5px;
+}
+
+h3 {
+font-size:1.2em;
+}
+
+h4, h5, h6
+{
+	font-size:110%;
+	margin: 0.5em 0;
+}
+li, p
+{
+	font-size:1.1em;
+}
+
+table.tab1
+{
+	font-size:18;
+        color:black;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid black;
+
+}
+table.tab2
+{
+	font-size:25;
+        color:black;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid black;
+}
+
+
+
+/*Information block*/
+.information-block
+{
+	width:180px;
+	margin-bottom:16px;
+}
+
+.information-block-head
+{
+	color:#BC262C;
+	font-weight:bold;
+	font-size:85%;
+	border-bottom:1px solid #CCCCCC;
+	margin-bottom:4px;
+	padding-bottom:5px;
+}
+
+.information-block-body
+{
+	font-size:16;
+	color:#737373;
+	margin-right:20px;
+}
+
+/*Content block*/
+.content-block
+{
+        font-size:16;
+	border-top-color:#E4E4E4;
+	background:#F5F5F5;
+	margin-bottom:5px;
+	width:100%;
+}
+
+.content-block-head
+{
+	background-image:url(images/content_block_bg.gif);
+	font-weight:bold;
+	font-size:95%;
+	margin:2px;
+	padding: 5px 9px;
+}
+
+.content-block-body
+{
+	padding:4px 5px;
+	width:100%;
+}
+
+code
+{
+	font-size:100%;
+	font-weight:normal;
+	display:block;
+	padding:1.5em 1em 1em 1em;
+	border-style:solid;
+	border-width:1px;
+	border-width:1px 0;
+	margin:1em 0;
+	background-color:#F5F5F5;
+	font-family:sans-serif;
+}
+
+
+#mainImages img {
+    margin: 5px 15px;
+
+}
+
+ul.galka {
+  list-style-image: url(http://lestnicy-perila.ru/images/icons/galka2.png);
+}
+
+ul.galka li {
+  margin: 5px;
+  font-size: 1.1em;
+}
+
+.raschet {
+cursor: pointer;
+padding: 3px;
+}
+
+.raschet:hover {
+background-color: #99CCFF;
+//max-width: 400px;
+border-radius: 3px;
+}
+
+.yellow {
+background-color: yellow;
+font-size: 1.2em;
+
+}
+
+#about img {
+margin: 2px 10px;
+width: 200px;
+
+}
+
+#complect img {
+    float: left;
+    margin: 0 50px 10px 0;
+	}
+/*	
+#complect h3 {
+    clear: both;
+	margin-top: 20px;
+	}*/
+	
+#complect div.clear {
+    clear: both;
+	margin-top: 100px;
+	}
+
+#stairsDiv, #railingDiv {
+clear: both;
+margin-top: 100px;
+min-height: 320px;
+}
+#carcasDiv {
+min-height: 320px;
+}
+	
+input.pz {
+border: none;
+    font-size: 1em;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif; 
+}
+
+input.pz_main {
+	border: none;
+    font-size: 1.5em;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif; 
+}
+.pz_info select {
+border: none;
+-webkit-appearance: none;
+font-size:0.9em;
+}
+
+.pz_info input {
+border: none;
+font-size:0.9em;
+width: 600px;
+}
+
+
+ul.pz_info {
+list-style: none;
+margin: 0;
+padding-left: 0;
+}
+
+#mainImages h2 {
+padding-top: 0;
+margin-top: 25px;
+
+}
+
+p.h3 {
+font-size: 1.1em;
+margin: 1em;
+font-weight: bold;
+color: black;
+text-align: center;
+}
+
+p.h2 {
+text-align: center;
+margin: 1em;
+font-size: 1.3em;
+font-weight: bold;
+color: black;
+margin: 30px 0 5px 0;
+}
+.bold {
+font-weight: bold;
+}

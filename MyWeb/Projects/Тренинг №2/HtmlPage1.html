@@ -1,0 +1,1714 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Тестовое задание форма тетивы</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="/bitrix/js/main/core/css/core.css?1410188235" type="text/css" rel="stylesheet" />
+    <link href="/bitrix/templates/calc/styles.css?1475752328" type="text/css" rel="stylesheet" />
+    <link href="/bitrix/templates/calc/template_styles.css?1474463973" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="/bitrix/js/main/core/core.js?1410188235"></script>
+    <script type="text/javascript">BX.message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','bitrix_sessid':'e9c7ac52f02bbfb90e58f013e7bef341','JS_CORE_LOADING':'Загрузка...','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить'})</script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?1410188235"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_fx.js?1410188235"></script>
+    <script type="text/javascript" src="/bitrix/js/main/session.js?1410188235"></script>
+    <script type="text/javascript">
+bxSession.mess.messSessExpired = 'Ваш сеанс работы с сайтом завершен из-за отсутствия активности в течение 24 мин. Введенные на странице данные не будут сохранены. Скопируйте их перед тем, как закроете или обновите страницу.';
+bxSession.Expand(1440, 'e9c7ac52f02bbfb90e58f013e7bef341', true, 'e63698396dbd97a0e0bc761f3782c8b3');
+    </script>
+    <script type="text/javascript" src="/bitrix/components/my_components/js/jquery.1.6.4.js"></script>
+    <script type="text/javascript" src="/bitrix/components/my_components/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="/bitrix/components/my_components/js/easySlider1.7.js"></script>
+    <script type="text/javascript" src="/bitrix/components/my_components/fancybox/jquery.fancybox.js?v=2.1.3"></script>
+    <!-- доп. скрипты -->
+    <script type="text/javascript" src="/bitrix/components/my_components/js/my_scripts.js"></script>
+
+    <!--чтение данных из форм-->
+    <script type="text/javascript" src="/calculator/general/inputsReading.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/bitrix/components/my_components/fancybox/jquery.fancybox.css?v=2.1.2" media="screen" />
+
+
+
+    <script type="text/javascript">
+$(document).ready(function() {
+  $("[data-toggle]").click(function() {
+    var toggle_el = $(this).data("toggle");
+    $(toggle_el).toggleClass("open-sidebar");
+  });
+
+   $("#imageShow").click(function() {
+    var toggle_el = $(this).data("toggle");
+    $(toggle_el).toggleClass("open-sidebar");
+  });
+
+});
+
+    </script>
+</head>
+
+<body>
+    <div id="panel"></div>
+
+
+
+    <div id="headerContainer">
+        <div id="header">
+            <div class="header-left">
+                <a href="/" class="logo"><img src="/bitrix/templates/calc/images/logo.png" alt="Стиль-Т" /><br /></a>
+                <p>Изготовление лестниц на заказ</p>
+            </div>
+            <div class="header-center">
+                <p>г. Москва, 1-й Кирпичный пер., д.4, стр.8</p>
+                <p>Работаем пн-сб с 9:00 до 20:00 </p>
+            </div>
+            <div class="header-right">
+                <p style="font-size: 1.2em;">+7 (495) 125-11-78</p>
+                <p><a href="http://lestnicy-perila.ru/">lestnicy-perila.ru</a></p>
+                <p>5806968@mail.ru</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="container">
+        <div id="sidebar">
+            <p>Показать блоки:</p>
+            <!-- чекбоксы блоков для текущего подраздела-->
+
+
+            <p>Расчеты:</p>
+            <ul>
+                <li><a href="/calculator/geometry/" target="_blank">Геометрия</a></li>
+                <li><a href="/calculator/metal/" target="_blank">ЛТ-КО</a></li>
+                <li><a href="/calculator/timber/" target="_blank">Деревянные</a></li>
+                <!--<li><a href="/calculator/mono/" target="_blank">Монокосоур</a></li>-->
+                <li><a href="/calculator/vint/" target="_blank">Винтовые</a></li>
+                <!--<li><a href="/calculator/vhod/" target="_blank">Входные</a></li>-->
+                <li><a href="/calculator/offers/" target="_blank">Поиск по базе</a></li>
+            </ul>
+
+
+
+        </div>
+
+        <div class="main-content">
+            <div class="swipe-area"></div>
+            <a href="#" data-toggle=".container" id="sidebar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="content">
+
+
+                <!--	<div id="result" style="display: none;"><div> -->
+                <h1 id="mainTitle">Изменение формы тетивы</h1>
+
+
+                <!--служебные поля-->
+
+                <div id="calcInfo" style="display: none">
+                    <select size="1" id="calcType">
+                        <option value="lt-ko" selected>lt-ko</option>
+                        <option value="timber">timber</option>
+                        <option value="vint">vint</option>
+                        <option value="vhod">vhod</option>
+                        <option value="mono">mono</option>
+                        <option value="geometry">geometry</option>
+                    </select>
+                    <input type="text" value="3.0" id="calcVersion"></li>
+
+
+                    <!-- Форма параметров заказа-->
+                    <div class="noPrint">
+                        <a href="/calculator/offers/" target="_blank"><img src="/images/icons/BD_find.png" width="50px"></a>
+                        <img src="/images/icons/BD_add.png" width="50px" onclick="saveToBD('content', '/calculator/general/db_data_exchange/dataExchangeXml_2.1.php')">
+                        <img src="/images/icons/BD_load.png" width="50px" onclick="loadFromBD('content', '/calculator/general/db_data_exchange/dataExchangeXml_2.1.php')">
+                    </div>
+
+                    <ul class="pz_info">
+                        <li>Номер предложения: <input type="text" value="" id="orderName" readonly></li>
+                        <li>Адрес объекта: <input type="text" value="к/п Гринфилд" id="adress"></li>
+                        <li>
+                            Менеджер:
+                            <select size="1" id="managerName">
+                                <option value="Константин Лащиновский">Константин Лащиновский</option>
+                                <option value="Андрей Панков">Андрей Панков</option>
+                                <option value="Ренат Билялов">Ренат Билялов</option>
+                                <option value="Алексей Маслов">Алексей Маслов</option>
+                                <option value="Артур Саркисян">Артур Саркисян</option>
+                                <option value="Владислав Господариков">Владислав Господариков</option>
+                                <option value="Сергей Блескин">Сергей Блескин</option>
+                                <option value="Владимир Родионов">Владимир Родионов</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Инструкции для пользователей -->
+                <!-- История версий -->
+                <!-- визуализация -->
+                <div id="visualisation">
+                    <h2 class="raschet" onclick="recalculate();">Общий вид лестницы:</h2>
+                    <div id="Stats-output" style="display: none;"></div>
+
+                    <div id="WebGL-output"><canvas>Для отображения содержимого откройте страницу в Гугл Хром</canvas></div>
+                </div>
+                <p class="raschet" onclick="exportToDxf(dxfPrimitivesArr);">Экспорт контуров в dxf</p>
+
+                <!-- Картинки, описание, комплектация -->
+                <!-- О компании -->
+
+                <div id="carcasForm">
+                    <h2>Характеристики лестницы</h2>
+
+                    <!-- форма параметров проемов каркаса-->
+                    <h4>1. Общие характеристики:</h4>
+
+                    <table class="form_table">
+                        <tbody>
+
+                            <tr id="model_tr">
+                                <td>Каркас:</td>
+                                <td>
+                                    <select id="model" size="1" onchange="changeFormCarcas(); changeFormRailing(); /*changeOffer();*/">
+                                        <option value="лт">ЛТ</option>
+                                        <option value="ко">КО</option>
+                                        <option value="нет">нет</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Геометрия лестницы:</td>
+                                <td>
+                                    <select id="stairModel" size="1" onchange="changeFormCarcas(); changeFormRailing(); /*changeOffer();*/">
+                                        <option value="Прямая" selected>Прямая</option>
+                                        <option value="Г-образная с площадкой">Г-образная с площадкой</option>
+                                        <option value="Г-образная с забегом">Г-образная с забегом</option>
+                                        <option value="П-образная с площадкой">П-образная с площадкой</option>
+                                        <option value="П-образная с забегом">П-образная с забегом</option>
+                                        <option value="П-образная трехмаршевая">П-образная трехмаршевая</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="middlePlatform_tr_2">
+                                <td>Глубина промежуточной площадки:</td>
+                                <td><input id="platformLength_1" type="number" value="1000"></td>
+                            </tr>
+
+                            <tr id="middlePlatform_tr_3">
+                                <td>Ширина промежуточной площадки:</td>
+                                <td><input id="platformWidth_1" type="number" value="2000"></td>
+                            </tr>
+
+                            <tr id="marshDist_tr">
+                                <td>Зазор между маршами в плане:</td>
+                                <td>
+                                    <input id="marshDist" type="number" value="70">
+                                </td>
+                            </tr>
+
+                            <tr id="turn_tr_11">
+                                <td>Нижний поворот:</td>
+                                <td>
+                                    <select id="turnType_1" size="1" onchange="changeFormCarcas();">
+                                        <option value="забег">забег</option>
+                                        <option value="площадка">площадка</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="turn_tr_12">
+                                <td>Верхний поворот:</td>
+                                <td>
+                                    <select id="turnType_2" size="1" onchange="changeFormCarcas();">
+                                        <option value="забег">забег</option>
+                                        <option value="площадка">площадка</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="turnSide_tr" style="display: none">
+                                <td>Направление поворота:</td>
+                                <td>
+                                    <select id="turnSide" size="1" onchange="">
+                                        <option value="правое">правое</option>
+                                        <option value="левое">левое</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="stringerDivision_tr" style="display: none">
+                                <td>Разделение косоуров промежуточной<br>площадки и низлежащего марша:</td>
+                                <td>
+                                    <select id="stringerDivision" size="1">
+                                        <option value="нет">нет</option>
+                                        <option value="есть">есть</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Верхняя площадка:</td>
+                                <td>
+                                    <select id="platformTop" size="1" onchange="changeFormCarcas(); changeFormRailing();">
+                                        <option value="нет">нет</option>
+                                        <option value="площадка">есть</option>
+                                        <option style="display: none;" value="забег">забег</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="platformTop_tr_1">
+                                <td>Задняя тетива площадки:</td>
+                                <td>
+                                    <select id="platformRearStringer" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="есть">есть</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="platformTop_tr_2">
+                                <td>Глубина верхней площадки:</td>
+                                <td><input id="platformLength_3" type="number" value="1000"></td>
+                            </tr>
+
+                            <tr id="columnModel_tr">
+                                <td>Опорные колонны:</td>
+                                <td>
+                                    <select id="columnModel" size="1" onchange="changeFormCarcas();">
+                                        <option value="нет">нет</option>
+                                        <option value="40х40">40х40</option>
+                                        <option value="100x50">100x50</option>
+                                        <option value="100x100">100x100</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="columnAmt_tr"><td>Количество колонн:</td> <td><input id="columnAmt" type="number" value="0"></td></tr>
+
+                            <tr id="columnLength_tr"><td>Общая длина колонн:</td> <td><input id="columnLength" type="number" value="0"></td></tr>
+
+                            <tr>
+                                <td>Внешняя ширина маршей:</td>
+                                <td>
+                                    <input id="M" type="number" value="900">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Тип тетив:</td>
+                                <td>
+                                    <select id="stringerType" size="1" onchange="">
+                                        <option value="пилообразная">пилообразная</option>
+                                        <option value="ломаная" selected>ломаная</option>
+                                        <option value="прямая">прямая</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Подступенки:</td>
+                                <td>
+                                    <select id="riserType" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="есть">есть</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="sideOverHang_tr">
+                                <td>Боковой свес ступеней, мм:</td>
+                                <td>
+                                    <input id="sideOverHang" type="number" value="75">
+                                </td>
+                            </tr>
+
+                            <tr id="stairFrame_tr">
+                                <td>Рамки под ступенями:</td>
+                                <td>
+                                    <select id="stairFrame" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="есть">есть</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="platformTop_tr_11">
+                                <td>Тип установки верхней ступени:</td>
+                                <td>
+                                    <select id="topStairType" size="1" onchange="">
+                                        <option value="ниже">ниже перекрытия</option>
+                                        <option value="вровень">вровень с перекрытием</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="platformTop_tr_14">
+                                <td>Верхнее крепление:</td>
+                                <td>
+                                    <select id="topAnglePosition" size="1" onchange="">
+                                        <option value="под ступенью">под ступенью</option>
+                                        <option value="над ступенью">над ступенью</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <h4>2. Параметры ступеней:</h4>
+                    <table class="form_table">
+                        <tbody>
+                            <tr>
+                                <th style="width: 20%;">Марш</th>
+                                <th>Кол-во прямых ступеней</th>
+                                <th>Подъем ступени</th>
+                                <th>Проступь</th>
+                                <th>Ступень</th>
+                            </tr>
+
+                            <tr>
+                                <td style="width: 20%;">Нижний</td>
+                                <td><input id="stairAmt1" type="number" value="12"></td>
+                                <td><input id="h1" type="number" value="180"></td>
+                                <td><input id="b1" type="number" value="260"></td>
+                                <td><input id="a1" type="number" value="300"></td>
+                            </tr>
+
+                            <tr id="marsh_2_tr">
+                                <td>Средний</td>
+                                <td><input id="stairAmt2" type="number" value="5"></td>
+                                <td><input id="h2" type="number" value="180"></td>
+                                <td><input id="b2" type="number" value="260"></td>
+                                <td><input id="a2" type="number" value="300"></td>
+                            </tr>
+
+                            <tr id="marsh_3_tr">
+                                <td>Верхний</td>
+                                <td><input id="stairAmt3" type="number" value="5"></td>
+                                <td><input id="h3" type="number" value="180"></td>
+                                <td><input id="b3" type="number" value="260"></td>
+                                <td><input id="a3" type="number" value="300"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div id="assembling_inputs">
+
+                        <h4>3. Крепление лестницы.</h4>
+
+
+                        <table class="form_table">
+                            <tbody>
+                                <tr>
+                                    <th>Узел</th>
+                                    <th>Материал</th>
+                                    <th>Кол-во точек крепления</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Нижнее перекрытие</td>
+                                    <td>
+                                        <select id="fixType1" size="1" onchange="">
+                                            <option value="не указано">не указано</option>
+                                            <option value="монолит">монолит</option>
+                                            <option value="пустотелая плита">пустотелая плита</option>
+                                            <option value="дерево">дерево</option>
+                                        </select>
+                                    </td>
+                                    <td><input id="fixAmt1" type="number" value="2"></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Стены</td>
+                                    <td>
+                                        <select id="fixType2" size="1" onchange="">
+                                            <option value="не указано">не указано</option>
+                                            <option value="монолит">монолит</option>
+                                            <option value="полнотелый кирпич">полнотелый кирпич</option>
+                                            <option value="пустотелый кирпич">пустотелый кирпич</option>
+                                            <option value="пеноблок">пеноблок</option>
+                                            <option value="дерево">дерево</option>
+                                            <option value="гипсокартон">гипсокартон</option>
+                                        </select>
+                                    </td>
+                                    <td><input id="fixAmt2" type="number" value="2"></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Верхнее перекрытие</td>
+                                    <td>
+                                        <select id="fixType3" size="1" onchange="">
+                                            <option value="не указано">не указано</option>
+                                            <option value="монолит">монолит</option>
+                                            <option value="пустотелая плита">пустотелая плита</option>
+                                            <option value="дерево">дерево</option>
+                                        </select>
+                                    </td>
+                                    <td><input id="fixAmt3" type="number" value="2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        Комментарии к материалам стен и перекрытий:<br />  <textarea id="comments_mounting" rows="1" cols="80" class="comments"></textarea><br>
+                        <br />
+                        <table class="form_table">
+                            <tbody>
+                                <tr id="platformTop_tr_3">
+                                    <td>Опоры верхней площадки:</td>
+                                    <td>
+                                        <select id="platformTopColumn" size="1" onchange="changeFormCarcas();">
+                                            <option value="колонны">колонны</option>
+                                            <option value="подкосы">подкосы</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr id="inclinedBeamAngle_tr" style="display: none">
+                                    <td>Угол наклона подкоса к стене:</td>
+                                    <td><input id="inclinedBeamAngle" type="number" value="45"></td>
+                                </tr>
+
+                                <tr id="platformTopColumnAmt_tr" style="display: none">
+                                    <td>Количество опор верхней площадки</td>
+                                    <td><input id="platformTopColumnAmt" type="number" value="0"></td>
+                                </tr>
+
+                                <tr id="platformTop_tr_4">
+                                    <td>Фланец крепления к верхнему перекрытию:</td>
+                                    <td>
+                                        <select id="topFlan" size="1" onchange="">
+                                            <option value="есть">есть</option>
+                                            <option selected value="нет">нет</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Тип крепления к нижнему перекрытию:</td>
+                                    <td>
+                                        <select id="bottomAngleType" size="1" onchange="">
+                                            <option value="уголок">уголок</option>
+                                            <option value="регулируемая опора">регулируемая опора</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Зазор от каркаса до стен, мм:</td>
+                                    <td>
+                                        <input id="wallDist" type="number" value="10">
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div id="complect_inputs">
+                        <h4>4. Комплектация лестницы:</h4>
+
+                        <table class="form_table">
+                            <tbody>
+
+                                <tr>
+                                    <td>Комплектация:</td>
+                                    <td>
+                                        <select id="template" size="1" onchange="setTemplateCarcas()">
+                                            <option value="дерево 1">дерево 1</option>
+                                            <option value="дерево 2">дерево 2</option>
+                                            <option value="дерево 3">дерево 3</option>
+                                            <option value="дерево 4">дерево 4</option>
+                                            <option value="индивидуальная">индивидуальная</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Ступени:</td>
+                                    <td>
+                                        <select id="stairType" size="1" onchange="setStairOption()">
+                                            <option value="сосна кл.Б">сосна кл.Б</option>
+                                            <option value="береза паркет.">береза паркет.</option>
+                                            <option value="дуб паркет.">дуб паркет.</option>
+                                            <option value="дуб ц/л">дуб ц/л</option>
+                                            <option value="нет">нет</option>
+                                            <option value="рифленая сталь">рифленая сталь</option>
+                                            <option value="рифленый алюминий">рифленый алюминий</option>
+                                            <option value="лотки">лотки</option>
+                                            <option value="дпк">дпк</option>
+                                            <option value="пресснастил">пресснастил</option>
+                                            <option value="стекло">стекло</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Покраска металла:</td>
+                                    <td>
+                                        <select id="metalPaint" size="1" onchange="">
+                                            <option value="нет">нет</option>
+                                            <option value="грунт">грунт</option>
+                                            <option value="порошок">порошок</option>
+                                            <option value="автоэмаль">автоэмаль</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Цвет покраски металла</td>
+                                    <td><textarea id="comments_01" rows="1" cols="30" class="comments">cерый структурный</textarea></td>
+                                </tr>
+
+                                <tr id="timberPaint_tr">
+                                    <td>Покраска дерева:</td>
+                                    <td>
+                                        <select id="timberPaint" size="1" onchange="">
+                                            <option value="нет">нет</option>
+                                            <option value="лак">лак</option>
+                                            <option value="морилка+лак">морилка+лак</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Цвет покраски дерева</td>
+                                    <td><textarea id="comments_02" rows="1" cols="30" class="comments">xm-8000-96 1:10</textarea></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Сборка:</td>
+                                    <td>
+                                        <select id="install" size="1" onchange="">
+                                            <option value="нет">нет</option>
+                                            <option value="есть">есть</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    Комментарии к расчету:<br />  <textarea id="comments_03" rows="1" cols="80" class="comments"></textarea>
+                    <br />
+
+                    <!--Обработчик формы-->
+                    <script type="text/javascript" src="/calculator/metal/forms/carcas_form_change.js"></script>
+
+
+
+                    <h3>Стоимость каркаса и ступеней: </h3>
+                    <div id="resultCarcas">
+                        <p>Расчет еще не произведен.</p>
+                    </div>
+
+                </div>
+
+                <div id="perilaForm">
+                    <!-- форма параметров ограждений-->
+                    <h2>Характеристики ограждений лестницы</h2>
+                    <table class="form_table">
+                        <tbody>
+
+                            <tr id="marsh_1_perila_tr">
+                                <td>Ограждения нижнего марша:</td>
+                                <td>
+                                    <select id="railingSide_1" size="1" onchange="">
+                                        <option value="нет" selected>нет</option>
+                                        <option value="внешнее">внешнее</option>
+                                        <option value="внутреннее">внутреннее</option>
+                                        <option value="две">две стороны</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="marsh_2_perila_tr">
+                                <td>Ограждения среднего марша:</td>
+                                <td>
+                                    <select id="railingSide_2" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="внешнее">внешнее</option>
+                                        <option value="внутреннее">внутреннее</option>
+                                        <option value="две">две стороны</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="marsh_3_perila_tr">
+                                <td>Ограждения верхнего марша:</td>
+                                <td>
+                                    <select id="railingSide_3" size="1" onchange="">
+                                        <option value="нет" selected>нет</option>
+                                        <option value="внешнее">внешнее</option>
+                                        <option value="внутреннее">внутреннее</option>
+                                        <option value="две">две стороны</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="backRailing_1_tr">
+                                <td>Заднее ограждение промежуточной площадки:</td>
+                                <td>
+                                    <select id="backRailing_1" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="есть">есть</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="backRailing_2_tr">
+                                <td>Заднее ограждение забега:</td>
+                                <td>
+                                    <select id="backRailing_2" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="есть">есть</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="backRailing_3_tr">
+                                <td>Заднее ограждение верхней площадки:</td>
+                                <td>
+                                    <select id="backRailing_3" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="есть">есть</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="balRackBottom_tr" style="display: none">
+                                <td>Крепление стоек балюстрады:</td>
+                                <td>
+                                    <select id="balRackBottom" size="1" onchange="">
+                                        <option value="боковое">боковое</option>
+                                        <option value="сверху с крышкой" selected="true">сверху</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Модель ограждения:</td>
+                                <td>
+                                    <select id="railingModel" size="1" onchange="changeFormRailing()">
+                                        <option value="Ригели">Ригели</option>
+                                        <option value="Стекло на стойках" selected>Стекло на стойках</option>
+                                        <option value="Самонесущее стекло">Самонесущее стекло</option>
+                                        <option value="Кованые балясины">Кованые балясины</option>
+                                        <option style="display:none;" value="Деревянные балясины">Деревянные балясины</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!--общие параметры ограждений -->
+
+                            <tr>
+                                <td>Модель поручня:</td>
+                                <td>
+                                    <select id="handrail" size="1" onchange="">
+                                        <option value="40х20 черн.">40х20 черн.</option>
+                                        <option value="40х40 черн.">40х40 черн.</option>
+                                        <option value="60х30 черн.">60х30 черн.</option>
+                                        <option value="кованый полукруглый">кованый полукруглый</option>
+                                        <option value="40х40 нерж.">40х40 нерж.</option>
+                                        <option value="Ф50 нерж.">Ф50 нерж.</option>
+                                        <option value="Ф50 сосна">Ф50 сосна</option>
+                                        <option value="омега-образный сосна">омега-образный сосна</option>
+                                        <option value="50х50 сосна">40х60 сосна</option>
+                                        <option value="40х60 береза">40х60 береза</option>
+                                        <option value="омега-образный дуб">омега-образный дуб</option>
+                                        <option value="40х60 дуб">40х60 дуб</option>
+                                        <option value="40х60 дуб с пазом">40х60 дуб с пазом</option>
+                                        <option value="Ф50 нерж. с пазом">Ф50 нерж. с пазом</option>
+                                        <option value="40х60 нерж. с пазом">40х60 нерж. с пазом</option>
+                                        <option value="нет">нет</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="banisterMaterial_tr">
+                                <td>Материал стоек:</td>
+                                <td>
+                                    <select id="banisterMaterial" size="1" onchange="">
+                                        <option value="40х40 черн.">40х40 черн.</option>
+                                        <option value="40х40 нерж.">40х40 нерж.</option>
+                                        <option value="40х40 нерж+дуб">40х40 нерж+дуб</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="rackBottom_tr">
+                                <td>Крепление стоек лестницы:</td>
+                                <td>
+                                    <select id="rackBottom" size="1" onchange="">
+                                        <option value="боковое">боковое</option>
+                                        <option value="сверху с крышкой">сверху</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+
+
+                            <!--параметры ограждения с ригелями -->
+                            <tr id="rigel_tr_1">
+                                <td>Материал ригелей:</td>
+                                <td>
+                                    <select id="rigelMaterial" size="1" onchange="">
+                                        <option value="20х20 черн.">20х20 черн.</option>
+                                        <option value="Ф12 нерж.">Ф12 нерж.</option>
+                                        <option value="Ф16 нерж.">Ф16 нерж.</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="rigel_tr_2">
+                                <td>Кол-во ригелей:</td>
+                                <td>
+                                    <select id="rigelAmt" size="1" onchange="">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- параметры ограждений с самонесущим стеклом -->
+                            <tr id="glass_tr_1">
+                                <td>Крепление поручня на стекло:</td>
+                                <td>
+                                    <select id="glassHandrail" size="1" onchange="changeFormRailing()">
+                                        <option value="сверху">сверху</option>
+                                        <option value="сбоку">сбоку</option>
+                                        <option style="display:none;" value="нет">нет</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- параметры кованых ограждений -->
+
+                            <tr id="kovka_tr_1">
+                                <td>Столбы:</td>
+                                <td>
+                                    <select id="rackTypeKovka" size="1" onchange="">
+                                        <option value="40х40">Гладкий 40х40</option>
+                                        <option style="display:none;" value="stolb_1">Корзинка</option>
+                                        <option style="display:none;" value="stolb_2">Поковка</option>
+                                        <option style="display:none;" value="stolb_3">Кручение</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="kovka_tr_2">
+                                <td>Модель балясины 1:</td>
+                                <td>
+                                    <select id="banister1" size="1" onchange="">
+                                        <option value="bal_1">1 корзинка</option>
+                                        <option value="bal_2">2 корзинки</option>
+                                        <option value="bal_3">1 поковка</option>
+                                        <option value="bal_4">2 поковки</option>
+                                        <option value="bal_5">Завиток</option>
+                                        <option value="bal_6">2 бублика</option>
+                                        <option value="bal_7">4 бублика</option>
+                                        <option value="bal_8">6 бубликов</option>
+                                        <option value="bal_9">Завиток с листьями</option>
+                                        <option value="bal_10">1 кручение</option>
+                                        <option value="bal_11">2 кручения</option>
+                                        <option value="bal_12">S-образная №1</option>
+                                        <option value="bal_13">S-образная №2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="kovka_tr_3">
+                                <td>Модель балясины 2:</td>
+                                <td>
+                                    <select id="banister2" size="1" onchange="">
+                                        <option value="bal_1">1 корзинка</option>
+                                        <option value="bal_2">2 корзинки</option>
+                                        <option value="bal_3">1 поковка</option>
+                                        <option value="bal_4">2 поковки</option>
+                                        <option value="bal_5">Завиток</option>
+                                        <option value="bal_6">2 бублика</option>
+                                        <option value="bal_7">4 бублика</option>
+                                        <option value="bal_8">6 бубликов</option>
+                                        <option value="bal_9">Завиток с листьями</option>
+                                        <option value="bal_10">1 кручение</option>
+                                        <option value="bal_11">2 кручения</option>
+                                        <option value="bal_12">S-образная №1</option>
+                                        <option value="bal_13">S-образная №2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="kovka_tr_4">
+                                <td>Примерный шаг балясин:</td>
+                                <td><input id="balDist" type="number" value="100"></td>
+                            </tr>
+
+                            <!--Ограждения с деревянными балясинами -->
+                            <tr id="timberBal_tr_1">
+                                <td>Кол-во балясин на ступень:</td>
+                                <td>
+                                    <select id="timberBalStep" size="1" onchange="">
+                                        <option value="1">1</option>
+                                        <option value="1.5">3/2</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="timberBal_tr_2">
+                                <td>Верхнее окончание:</td>
+                                <td>
+                                    <select id="timberBalTopEnd" size="1" onchange="">
+                                        <option value="круг">круглое</option>
+                                        <option value="квадрат">квадратное</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr id="timberBal_tr_3">
+                                <td>Нижнее окончание:</td>
+                                <td>
+                                    <select id="timberBalBotEn" size="1" onchange="">
+                                        <option value="круг" selected>круглое</option>
+                                        <option value="квадрат">квадратное</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="timberBal_tr_4">
+                                <td>Размер балясин:</td>
+                                <td>
+                                    <select id="banisterSize" size="1" onchange="">
+                                        <option value="40">40x40</option>
+                                        <option value="50">50x50</option>
+                                        <option value="60">60x60</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="timberBal_tr_5">
+                                <td>№ балясины по каталогу:</td>
+                                <td>
+                                    <input id="timberBalModel" type="number" value="1">
+                                </td>
+                            </tr>
+
+                            <tr id="timberBal_tr_6">
+                                <td>№ столбов по каталогу:</td>
+                                <td>
+                                    <input id="timberRackModel" type="number" value="1">
+                                </td>
+                            </tr>
+
+                            <tr id="timberBal_tr_7">
+                                <td>Порода дерева:</td>
+                                <td>
+                                    <select id="railingTimber" size="1" onchange="">
+                                        <option value="сосна">сосна</option>
+                                        <option value="береза">береза</option>
+                                        <option value="дуб">дуб</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Покраска металла:</td>
+                                <td>
+                                    <select id="metalPaint_perila" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="грунт">грунт</option>
+                                        <option value="порошок" selected="true">порошок</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Цвет покраски металла</td>
+                                <td><textarea id="comments_04" rows="1" cols="30" class="comments">cерый структурный</textarea></td>
+                            </tr>
+
+                            <tr>
+                                <td>Покраска дерева:</td>
+                                <td>
+                                    <select id="timberPaint_perila" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="лак" selected="true">лак</option>
+                                        <option value="морилка+лак">морилка+лак</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Цвет покраски дерева</td>
+                                <td><textarea id="comments_05" rows="1" cols="30" class="comments">xm-8000-96 1:10</textarea></td>
+                            </tr>
+
+                            <tr>
+                                <td>Сборка:</td>
+                                <td>
+                                    <select id="install_perila" size="1" onchange="">
+                                        <option value="есть">есть</option>
+                                        <option value="нет">нет</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    <div id="topRailingInputTable"></div>
+                    Комментарии к расчету:<br />  <textarea id="comments_06" rows="1" cols="80" class="comments"></textarea>
+                    <br />
+
+
+
+                    </form>
+
+                    <!--Обработчик формы-->
+                    <script type="text/javascript" src="/calculator/metal/forms/railing_form_change.js"></script>
+
+                    <div id="resultPerila">
+                        <h3>Стоимость ограждений:</h3>
+                        <p>Расчет еще не произведен.</p>
+                    </div>
+
+
+                    <div id="marshRailingImages2D">
+                        <canvas id='section_1'>Откройте страницу в Google Chrome</canvas>
+                    </div>
+
+                </div>
+
+                <div id="banisterСonstructForm">
+                    <h2>Конструкция балюстрады</h2>
+                    <!-- форма параметров конструкции ограждения-->
+                    <table class="form_table">
+                        <tbody>
+
+                            <tr>
+                                <td>Модель ограждения:</td>
+                                <td>
+                                    <select id="railingModel_bal" size="1" onchange="changeFormBanisterConstruct()">
+                                        <option value="Ригели">Ригели</option>
+                                        <option value="Стекло на стойках" selected>Стекло на стойках</option>
+                                        <option value="Самонесущее стекло">Самонесущее стекло</option>
+                                        <option value="Кованые балясины">Кованые балясины</option>
+                                        <option value="Деревянные балясины">Деревянные балясины</option>
+                                        <option value="нет">нет</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!--общие параметры ограждений -->
+
+                            <tr>
+                                <td>Модель поручня:</td>
+                                <td>
+                                    <select id="handrail_bal" size="1" onchange="">
+                                        <option value="40х20 черн.">40х20 черн.</option>
+                                        <option value="40х40 черн.">40х40 черн.</option>
+                                        <option value="60х30 черн.">60х30 черн.</option>
+                                        <option value="кованый полукруглый">кованый полукруглый</option>
+                                        <option value="40х40 нерж.">40х40 нерж.</option>
+                                        <option value="Ф50 нерж.">Ф50 нерж.</option>
+                                        <option value="Ф50 сосна">Ф50 сосна</option>
+                                        <option value="омега-образный сосна">омега-образный сосна</option>
+                                        <option value="50х50 сосна">40х60 сосна</option>
+                                        <option value="40х60 береза">40х60 береза</option>
+                                        <option value="омега-образный дуб">омега-образный дуб</option>
+                                        <option value="40х60 дуб">40х60 дуб</option>
+                                        <option value="40х60 дуб с пазом">40х60 дуб с пазом</option>
+                                        <option value="Ф50 нерж. с пазом">Ф50 нерж. с пазом</option>
+                                        <option value="40х60 нерж. с пазом">40х60 нерж. с пазом</option>
+                                        <option value="нет">нет</option>
+                                        <option value="40х80 сосна">40х80 сосна</option>
+                                        <option value="40х80 береза">40х80 береза</option>
+                                        <option value="40х80 дуб">40х80 дуб</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="banisterMaterial_bal_tr">
+                                <td>Материал стоек:</td>
+                                <td>
+                                    <select id="banisterMaterial_bal" size="1" onchange="">
+                                        <option value="40х40 черн.">40х40 черн.</option>
+                                        <option value="40х40 нерж.">40х40 нерж.</option>
+                                        <option value="40х40 нерж+дуб">40х40 нерж+дуб</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="rackBottom_bal_tr">
+                                <td>Крепление стоек:</td>
+                                <td>
+                                    <select id="rackBottom_bal" size="1" onchange="">
+                                        <option value="сверху с крышкой">сверху</option>
+                                        <option value="боковое" style="display: none">боковое</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+
+
+                            <!--параметры ограждения с ригелями -->
+                            <tr id="rigel_bal_tr_1">
+                                <td>Материал ригелей:</td>
+                                <td>
+                                    <select id="rigelMaterial_bal" size="1" onchange="">
+                                        <option value="20х20 черн.">20х20 черн.</option>
+                                        <option value="Ф12 нерж.">Ф12 нерж.</option>
+                                        <option value="Ф16 нерж.">Ф16 нерж.</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="rigel_bal_tr_2">
+                                <td>Кол-во ригелей:</td>
+                                <td>
+                                    <select id="rigelAmt_bal" size="1" onchange="">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- параметры ограждений с самонесущим стеклом -->
+                            <tr class="glassRailing_bal">
+                                <td>Крепление поручня на стекло:</td>
+                                <td>
+                                    <select id="glassHandrail_bal" size="1" onchange="">
+                                        <option value="сверху">сверху</option>
+                                        <option value="сбоку">сбоку</option>
+                                        <option value="нет">нет</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- параметры кованых ограждений -->
+
+                            <tr id="kovka_bal_tr_1">
+                                <td>Столбы:</td>
+                                <td>
+                                    <select id="rackTypeKovka_bal" size="1" onchange="">
+                                        <option value="40х40">Гладкий 40х40</option>
+                                        <option style="display:none;" value="stolb_1">Корзинка</option>
+                                        <option style="display:none;" value="stolb_2">Поковка</option>
+                                        <option style="display:none;" value="stolb_3">Кручение</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="kovka_bal_tr_2">
+                                <td>Модель балясины 1:</td>
+                                <td>
+                                    <select id="banister1_bal" size="1" onchange="">
+                                        <option value="bal_1">1 корзинка</option>
+                                        <option value="bal_2">2 корзинки</option>
+                                        <option value="bal_3">1 поковка</option>
+                                        <option value="bal_4">2 поковки</option>
+                                        <option value="bal_5">Завиток</option>
+                                        <option value="bal_6">2 бублика</option>
+                                        <option value="bal_7">4 бублика</option>
+                                        <option value="bal_8">6 бубликов</option>
+                                        <option value="bal_9">Завиток с листьями</option>
+                                        <option value="bal_10">1 кручение</option>
+                                        <option value="bal_11">2 кручения</option>
+                                        <option value="bal_12">S-образная №1</option>
+                                        <option value="bal_13">S-образная №2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="kovka_bal_tr_3">
+                                <td>Модель балясины 2:</td>
+                                <td>
+                                    <select id="banister2_bal" size="1" onchange="">
+                                        <option value="bal_1">1 корзинка</option>
+                                        <option value="bal_2">2 корзинки</option>
+                                        <option value="bal_3">1 поковка</option>
+                                        <option value="bal_4">2 поковки</option>
+                                        <option value="bal_5">Завиток</option>
+                                        <option value="bal_6">2 бублика</option>
+                                        <option value="bal_7">4 бублика</option>
+                                        <option value="bal_8">6 бубликов</option>
+                                        <option value="bal_9">Завиток с листьями</option>
+                                        <option value="bal_10">1 кручение</option>
+                                        <option value="bal_11">2 кручения</option>
+                                        <option value="bal_12">S-образная №1</option>
+                                        <option value="bal_13">S-образная №2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="kovka_bal_tr_4">
+                                <td>Примерный шаг балясин:</td>
+                                <td><input id="balDist_bal" type="number" value="100"></td>
+                            </tr>
+
+                            <!--Ограждения с деревянными балясинами -->
+
+                            <tr class="timberRailing_bal_tr">
+                                <td>Верхнее окончание:</td>
+                                <td>
+                                    <select id="timberBalTopEnd_bal" size="1" onchange="">
+                                        <option value="круг">круглое</option>
+                                        <option value="квадрат">квадратное</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="timberRailing_bal_tr">
+                                <td>Нижнее окончание:</td>
+                                <td>
+                                    <select id="timberBalBotEnd_bal" size="1" onchange="">
+                                        <option value="круг" selected>круглое</option>
+                                        <option value="квадрат">квадратное</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr class="timberRailing_bal_tr">
+                                <td>Размер балясин:</td>
+                                <td>
+                                    <select id="banisterSize_bal" size="1" onchange="">
+                                        <option value="40">40x40</option>
+                                        <option value="50">50x50</option>
+                                        <option value="60">60x60</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr class="timberRailing_bal_tr">
+                                <td>№ балясины по каталогу:</td>
+                                <td>
+                                    <input id="timberBalModel_bal" type="number" value="1">
+                                </td>
+                            </tr>
+
+                            <tr class="timberRailing_bal_tr">
+                                <td>№ столбов по каталогу:</td>
+                                <td>
+                                    <input id="timberRackModel_bal" type="number" value="1">
+                                </td>
+                            </tr>
+
+                            <tr class="timberRailing_bal_tr">
+                                <td>Порода дерева:</td>
+                                <td>
+                                    <select id="railingTimber_bal" size="1" onchange="">
+                                        <option value="сосна">сосна</option>
+                                        <option value="береза">береза</option>
+                                        <option value="дуб">дуб</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+
+                            <tr id="banisterMetalPaint_tr">
+                                <td>Покраска металла:</td>
+                                <td>
+                                    <select id="metalPaint_perila_bal" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="грунт">грунт</option>
+                                        <option value="порошок">порошок</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+
+                            <tr id="banisterMetalColor_tr">
+                                <td>Цвет покраски металла</td>
+                                <td><textarea id="comments_04_bal" rows="1" cols="30" class="comments">как на лестнице</textarea></td>
+                            </tr>
+
+                            <tr id="banisterTimberPaint_tr">
+                                <td>Покраска дерева:</td>
+                                <td>
+                                    <select id="timberPaint_perila_bal" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="лак">лак</option>
+                                        <option value="морилка+лак">морилка+лак</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="banisterTimberColor_tr">
+                                <td>Цвет покраски дерева</td>
+                                <td><textarea id="comments_05_bal" rows="1" cols="30" class="comments">как на лестнице</textarea></td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                    <div id="topRailingInputTable"></div>
+                    Комментарии к расчету:<br />  <textarea id="comments_06_bal" rows="1" cols="80" class="comments"></textarea>
+                    <br />
+
+                    </form>
+
+                    <!--Обработчик формы-->
+                    <script type="text/javascript" src="/calculator/banister/forms/banister_construct_form_change.js"></script>
+
+                    <div id="price_banister">
+                        <h3>Стоимость балюстрады:</h3>
+                        <p>Расчет еще не произведен.</p>
+                    </div>
+
+                </div>
+
+
+
+
+                <!--форма доставка, сборка-->
+                <div id="assembling">
+                    <h2>Доставка, сборка на объекте</h2>
+
+                    <table class="form_table">
+                        <tbody>
+
+                            <tr>
+                                <td>Доставка:</td>
+                                <td>
+                                    <select id="delivery" size="1" onchange="changeFormAssembling()">
+                                        <option value="нет">нет</option>
+                                        <option value="Москва">в пределах МКАД</option>
+                                        <option value="Московская обл.">за МКАД</option>
+                                        <option value="транспортная компания">до транспортной компаниии</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr id="deliveryDist_tr"><td>Расстояние от МКАД, км:</td> <td><input id="deliveryDist" type="number" value="0"></td></tr>
+
+                            <tr>
+                                <td>Сборка:</td>
+                                <td>
+                                    <select id="isAssembling" size="1" onchange="changeFormAssembling()">
+                                        <option value="нет">нет</option>
+                                        <option value="есть">есть</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr class="installation_tr">
+                                <td>Выезд инженера:</td>
+                                <td>
+                                    <select id="engineer" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr class="installation_tr">
+                                <td>Выезды бригады сборщиков:</td>
+                                <td>
+                                    <select id="workers" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr class="installation_tr">
+                                <td>Подгонка некрашеных ступеней к стене:</td>
+                                <td>
+                                    <select id="stepCutting" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="да">да</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr class="installation_tr">
+                                <td>Завязка поручней по месту (кол-во стыков):</td>
+                                <td><input id="handrailCutting" type="number" value="0" onchange=""></td>
+                            </tr>
+                            <tr class="installation_tr">
+                                <td>Платная парковка рядом с объектом:</td>
+                                <td>
+                                    <select id="paidParking" size="1" onchange="">
+                                        <option value="нет">нет</option>
+                                        <option value="да">да</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <p class="installation_tr">
+                        Ограничения по времени работы на объекте:<br />
+                        <textarea ID="comments" rows="2" cols="80" class="comments">Работы можно производить в любой день (предварительно согласованный) с 8:00 до 23:00</textarea>
+                    </p>
+
+                    <!--обработчик формы-->
+                    <script type="text/javascript" src="/calculator/general/forms/assemblingFormChange.js"></script>
+
+
+                </div>
+
+
+                <div id="price_assembling">
+                    <h3>Стоимость доставки и сборки:</h3>
+                    <p>Расчет еще не произведен.</p>
+                </div>
+
+                <div id="cost" style="display: none">
+                    <h2 class="raschet" onclick='recalculate()'>Расчет себестоимости</h2>
+
+                    <h4>Коэффициенты на цену</h4>
+                    <table class="form_table">
+                        <tbody>
+                            <tr><th>Наименование</th><th>к-т на себестоимость</th><th>к-т на цену</th> </tr>
+                            <tr>
+                                <td>Каркас:</td>
+                                <td><input id="carcasCostFactor" type="number" value="1"></td>
+                                <td><input id="carcasPriceFactor" type="number" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>Ступени:</td>
+                                <td><input id="treadsCostFactor" type="number" value="1"></td>
+                                <td><input id="treadsPriceFactor" type="number" value="1"></td>
+                            <tr>
+                                <td>Перила:</td>
+                                <td><input id="railingCostFactor" type="number" value="1"></td>
+                                <td><input id="railingPriceFactor" type="number" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>Сборка:</td>
+                                <td><input id="assemblingCostFactor" type="number" value="1"></td>
+                                <td><input id="assemblingPriceFactor" type="number" value="1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Общая себестоимость</h3>
+                    <div id="total_cost">
+                        <p>Расчет еще не произведен</p>
+                    </div>
+
+                    <h3>Себестоимость каркаса и ступеней</h3>
+                    <div id="cost_carcas">
+                        <p>Расчет еще не произведен</p>
+                    </div>
+
+                    <h3>Себестоимость ограждений лестницы</h3>
+                    <div id="cost_perila">
+                        <p>Расчет еще не произведен</p>
+                    </div>
+
+                    <h3>Себестоимость балюстрады</h3>
+                    <div id="cost_banister">
+                        <p>Расчет еще не произведен</p>
+                    </div>
+
+                    <h3>Себестоимость доставки, сборки</h3>
+                    <div id="cost_assembling">
+                        <p>Расчет еще не произведен</p>
+                    </div>
+
+
+
+                </div>
+
+                <div id="result" style="display: none;"></div>
+
+                <div id="specificationList" style="display: none;">
+                    <h2 class="raschet" onclick="calculation();">Спецификация</h2>
+                    <div id="metal_list"></div>
+
+                    <div id="timber_list"></div>
+
+                    <div id="store_list"></div>
+
+                    <div id="faq"></div>
+
+                </div>
+
+
+
+
+                <!-- правое меню -->
+
+                <div class="tabs">
+                    <ul>
+                        <li>Стены</li>
+                        <li>Выступы</li>
+                        <li>Проем</li>
+                        <li>Балюстрада</li>
+                    </ul>
+                    <div>
+
+                        <!-- Форма ввода параметров стен-->
+                        <div id="wallsFormDiv">
+
+                            <table class="form_table">
+                                <tbody>
+                                    <tr><th>Стена</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+                                    <tr>
+                                        <td>Длина</td>
+                                        <td><input type="number" id="wallLength_1" value="5000" /></td>
+                                        <td><input type="number" id="wallLength_2" value="5000" /></td>
+                                        <td><input type="number" id="wallLength_3" value="5000" /></td>
+                                        <td><input type="number" id="wallLength_4" value="5000" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Высота</td>
+                                        <td><input type="number" id="wallHeight_1" value="5000" /></td>
+                                        <td><input type="number" id="wallHeight_2" value="5000" /></td>
+                                        <td><input type="number" id="wallHeight_3" value="5000" /></td>
+                                        <td><input type="number" id="wallHeight_4" value="5000" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Позиция X</td>
+                                        <td><input type="number" id="wallPositionX_1" value="0" /></td>
+                                        <td><input type="number" id="wallPositionX_2" value="0" /></td>
+                                        <td><input type="number" id="wallPositionX_3" value="5000" /></td>
+                                        <td><input type="number" id="wallPositionX_4" value="0" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Позиция Z</td>
+                                        <td><input type="number" id="wallPositionZ_1" value="0" /></td>
+                                        <td><input type="number" id="wallPositionZ_2" value="5000" /></td>
+                                        <td><input type="number" id="wallPositionZ_3" value="0" /></td>
+                                        <td><input type="number" id="wallPositionZ_4" value="0" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Толщина</td>
+                                        <td><input type="number" id="wallThickness_1" value="150" /></td>
+                                        <td><input type="number" id="wallThickness_2" value="150" /></td>
+                                        <td><input type="number" id="wallThickness_3" value="150" /></td>
+                                        <td><input type="number" id="wallThickness_4" value="150" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!--форма параметров выступов -->
+                        <div id="ledgeForm">
+
+                            <input type="hidden" id="wallLedgeAmt" value="0" />
+                            <table class="form_table">
+                                <tbody>
+                                    <tr>
+                                        <th>Тип</th>
+                                        <th>№ стены</th>
+                                        <th>Размеры</th>
+                                        <th>Позиция</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!--Обработчик формы-->
+                            <script type="text/javascript" src="/calculator/walls/forms/ledges_form_change.js"></script>
+
+                        </div>
+                        <!-- форма параметров проема -->
+                        <div id="topFloorForm">
+                            <label for="floorHoleWidth">Ширина</label>
+                            <input type="number" id="floorHoleWidth" value="2000"><br>
+                            <label for="floorHoleLength">Длина</label>
+                            <input type="number" id="floorHoleLength" value="2500"><br>
+                            <label for="floorThickness">Толщина перекрытия</label>
+                            <input type="number" id="floorThickness" value="300"><br>
+                            Тип верхних ступеней лестницы
+                            <select id="topThreadsType" size="1" onchange="">
+                                <option value="прямые">прямые</option>
+                                <option value="площадка">площадка</option>
+                                <option value="забег вправо">забег вправо</option>
+                                <option value="забег влево">забег влево</option>
+                                <option value="винтовая площадка">винтовая площадка</option>
+                            </select><br>
+
+                            <label for="topThreadsPosition">Отступ ступеней от края</label>
+                            <input type="number" id="topThreadsPosition" value="0"><br>
+                            <label for="topThreadsWidth">Ширина марша</label>
+                            <input type="number" id="topThreadsWidth" value="900"><br>
+
+                            <input type="hidden" id="topFloorAmt" value="1">
+                            <table class="form_table">
+                                <tbody>
+                                    <tr><th>Базовая кромка</th><th>Длина</th><th>Ширина</th><th>Смещение</th></tr>
+                                    <tr>
+                                        <td>
+                                            <select id="floorHoleLedgeBaseEdge0" size="1" onchange="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4" selected>4</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="number" id="floorHoleLedgeLength0" value="1000" /></td>
+                                        <td><input type="number" id="floorHoleLedgeWidth0" value="1000" /></td>
+                                        <td><input type="number" id="floorHoleLedgePosition0" value="0" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- форма параметров балюстрады -->
+                        <div id="banisterForm">
+                            <input id="banisterSectionAmt" value="0" /></p>
+                            <table class="form_table">
+                                <tbody>
+                                    <tr><th>Тип</th><th>Направление</th><th>Длина</th><th>Стыковка</th></tr>
+                                    <!--
+                                    <tr>
+                                        <td>
+                                            <select id="banisterSectionType0" size="1" onchange="">
+                                                <option value="секция">секция</option>
+                                                <option value="отступ" selected >отступ</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select id="banisterSectionDirection0" size="1" onchange="">
+                                                <option value="вперед">вперед</option>
+                                                <option value="назад" >назад</option>
+                                                <option value="вправо" >вправо</option>
+                                                <option value="влево" selected>влево</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="number" id="banisterSectionLength0" value="50"/></td>
+                                        <td>
+                                            <select id="banisterSectionConnection0" size="1" onchange="">
+                                                <option value="начало">начало</option>
+                                                <option value="конец">конец</option>
+                                                <option value="две стороны">две стороны</option>
+                                                <option value="нет" selected >нет</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="banisterSectionType1" size="1" onchange="">
+                                                <option value="секция">секция</option>
+                                                <option value="отступ">отступ</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select id="banisterSectionDirection1" size="1" onchange="">
+                                                <option value="вперед">вперед</option>
+                                                <option value="назад" selected >назад</option>
+                                                <option value="вправо">вправо</option>
+                                                <option value="влево">влево</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="number" id="banisterSectionLength1" value="1000"/></td>
+                                        <td>
+                                            <select id="banisterSectionConnection1" size="1" onchange="">
+                                                <option value="начало">начало</option>
+                                                <option value="конец">конец</option>
+                                                <option value="две стороны">две стороны</option>
+                                                <option value="нет" selected>нет</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    -->
+                                </tbody>
+                            </table>
+
+                            <script type="text/javascript" src="/calculator/banister/forms/changeFormBanister.js"></script>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!--общие библитотеки-->
+                <script async="" src="/calculator/forms/FileSaver.min.js" /></script>
+
+                <!--графика-->
+                <script type="text/javascript" src="/calculator/general/viewports_2.0.js"></script>
+                <script type="text/javascript" src="/calculator/general/three_libs/three.js"></script>
+                <script type="text/javascript" src="/calculator/general/three_libs/stats.js"></script>
+                <script type="text/javascript" src="/calculator/general/three_libs/dat.gui.js"></script>
+                <script type="text/javascript" src="/calculator/general/three_libs/OrbitControls.js"></script>
+                <script type="text/javascript" src="/calculator/general/three_libs/ThreeBSP.js"></script>
+
+
+                <!--визуализация-->
+                <script type="text/javascript" src="../drawStaircase.js"></script>
+                <script type="text/javascript" src="drawCarcasParts.js"></script>
+                <script type="text/javascript" src="../drawBridgeAsm.js"></script>
+
+
+                <script type="text/javascript" src="../drawRailing.js"></script>
+                <!--<script type="text/javascript" src="changeFormBanister.js"></script>-->
+                <script type="text/javascript" src="/calculator/general/drawPrimitives.js"></script>
+                <script type="text/javascript" src="/calculator/general/drawRailingParts.js"></script>
+                <script type="text/javascript" src="/calculator/general/drawCarcasPartsLib.js"></script>
+
+                <!--<script type="text/javascript" src="/calculator/general/drawPrimitives.js"></script>-->
+                <script type="text/javascript" src="/calculator/banister/drawBanister.js"></script>
+                <script type="text/javascript" src="/calculator/banister/drawBanisterSection.js"></script>
+
+                <!--экспорт в dxf-->
+                <script type="text/javascript" src="/calculator/general/dxfFileMaker.js"></script>
+
+                <!--обмен данными с базой и через файлы-->
+                <script type="text/javascript" src="/calculator/general/dataExchangeXml_3.0.js"></script>
+
+                <!-- правое меню-->
+                <script src="/calculator/general/right_menu/lighttabs.js"></script>
+                <link rel="stylesheet" href="/calculator/general/right_menu/lighttabs.css">
+
+                <!--изменение оффера
+                <script type="text/javascript" src="change_offer.js"></script>
+                -->
+                <!--расчет цены
+                <script type="text/javascript" src="priceCalc.js"></script>
+                <script type="text/javascript" src="/calculator/general/priceLib.js"></script>
+                <script type="text/javascript" src="/calculator/banister/priceCalcBanister.js"></script>
+                -->
+                <!--оболочки-->
+                <script type="text/javascript" src="../main.js"></script>
+
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>
